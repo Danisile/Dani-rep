@@ -1,0 +1,42 @@
+﻿@model CarParkingApp.Models.Details
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Person_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Person_IdentificationNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person_IdentificationNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Person_Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person_Gender)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Person_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
