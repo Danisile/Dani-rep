@@ -29,11 +29,5 @@ namespace CarParkingApp.Models
         {
             return new ApplicationDbContext();
         }
-
-        public System.Data.Entity.DbSet<CarParkingApp.Models.Parking> Parkings { get; set; }
-
-        public System.Data.Entity.DbSet<CarParkingApp.Models.Payment> Payments { get; set; }
-
-        public System.Data.Entity.DbSet<CarParkingApp.Models.Details> Details { get; set; }
     }
 }
